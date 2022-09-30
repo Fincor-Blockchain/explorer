@@ -1,0 +1,16 @@
+{
+  "name": "Fincor Explorer",
+  "description": "Fincor is Artificial Intelligence controlled blockchain that solves previously known issues like high energy usage, scalability, centralization, accessibility, interoperability and security. It is a completely autonomous multi-layer blockchain that strives evenly well on both private and public blockchains.",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

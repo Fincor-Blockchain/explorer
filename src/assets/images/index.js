@@ -1,0 +1,12 @@
+export { default as logo } from './logo.png';
+export { default as search } from './search.png';
+export { default as successIcon } from './success-icon.svg';
+export { default as failIcon } from './fail-icon.svg';
+export { default as wireBreak } from './wire-break.svg';
+export { default as facebook } from './facebook-icon.svg';
+export { default as noData } from './not-found.svg';
+export { default as copyIcon } from './copy-icon.svg';
+export { default as balance } from './balance.svg';
+export { default as home } from './home.svg';
+export { default as telegram } from './telegram.png';
+export { default as CopyIcon } from './copy.png';
