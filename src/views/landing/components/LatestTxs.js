@@ -5,7 +5,7 @@ import colors from 'src/vars/colors';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { IconText } from 'src/components/typography';
-import { swap, trx } from 'src/assets/fincoreassests';
+import { fnSymbol, swap } from 'src/assets/fincoreassests';
 import { NoData, TableLoader } from 'src/components';
 import { format } from 'timeago.js';
 import { SYMBOL_REGEX } from 'src/vars/regex';
@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   @media (max-width: 991px) {
     margin-bottom: 1rem;
     min-height: 470px;
+    margin-top: 1rem;
   }
 `;
 
@@ -220,13 +221,12 @@ const LatestTxs = () => {
                 <TableRow key={index}>
                   <TableCol icon>
                     <TdMain>
-                      <Icon src={trx} />
+                      <Icon src={fnSymbol} alt="Trxs" />
                       <BlockHeight>
                         <TxsAmount>
                           {item.tx.value.msg[0].value.amount[0].amount / SCALE}{' '}
                           {item.tx.value.msg[0].value.amount[0].denom.replace(
                             SYMBOL_REGEX,
-
                             ''
                           )}
                         </TxsAmount>

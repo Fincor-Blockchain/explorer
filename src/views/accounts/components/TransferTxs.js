@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { trx, Confirmed, Unconfirmed } from 'src/assets/fincoreassests';
+import {
+  transactionImage,
+  Confirmed,
+  Unconfirmed
+} from 'src/assets/fincoreassests';
 import { IconText, NoData, TableLoader } from 'src/components';
 import { Table, TableRow, TableCell } from 'src/components';
 import styled from 'styled-components';
@@ -130,7 +134,7 @@ const TransferTxs = (props) => {
                 <TableRow key={index}>
                   <TableCol>
                     <TdMain>
-                      <Icon src={trx} />
+                      <Icon src={transactionImage} />
                     </TdMain>
                   </TableCol>
                   <TableAmountCol>

@@ -1,53 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import srcReg from 'src/assets/fonts/Gilroy-Regular.ttf';
-import srcBold from 'src/assets/fonts/Gilroy-Bold.ttf';
-import srcLight from 'src/assets/fonts/Gilroy-Light.ttf';
-import srcMed from 'src/assets/fonts/Gilroy-Medium.ttf';
-import srcExtraBold from 'src/assets/fonts/Gilroy-ExtraBold.ttf';
-import srcSemiBold from 'src/assets/fonts/Gilroy-SemiBold.ttf';
-import srcBlack from 'src/assets/fonts/Gilroy-Black.ttf';
 
 const backgroundColor = '#F1F2F2';
 
 const GlobalStyle = createGlobalStyle`
-    @font-face {
-      font-family: GilroyRegular;
-      src: url(${srcReg});
-      font-weight:400;
-    }
-    
-    @font-face {
-      font-family: GilroyBold;
-      src: url(${srcBold});
-      // font-weight: 400;
-    }
-
-    @font-face {
-      font-family: GilroyLight;
-      src: url(${srcLight});
-      // font-weight: 700;
-    }
-
-    @font-face {
-      font-family: GilroyMedium;
-      src: url(${srcMed});
-      // font-weight: 400;
-    }
-    @font-face {
-      font-family: GilroySemiBold;
-      src: url(${srcSemiBold});
-      // font-weight: 400;
-    }
-    @font-face {
-      font-family: GilroyExtraBold;
-      src: url(${srcExtraBold});
-      // font-weight: 400;
-    }
-    @font-face {
-      font-family: GilroyBlack;
-      src: url(${srcBlack});
-      // font-weight: 400;
-    }
+   
 
     html, body {
         width: 100%;

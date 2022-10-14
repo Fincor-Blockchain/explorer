@@ -21,7 +21,7 @@ const MapWithAMarkerClusterer = compose(
   }),
   withHandlers({
     onMarkerClustererClick: () => (markerClusterer) => {
-      const clickedMarkers = markerClusterer.getMarkers();
+      // const clickedMarkers = markerClusterer.getMarkers();
     }
   }),
   withScriptjs,

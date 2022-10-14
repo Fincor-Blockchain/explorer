@@ -216,7 +216,7 @@ const Blocks = (props) => {
                   <>
                     <ContentRow>
                       <Content>
-                        <LightText>Tx Count:</LightText>
+                        <LightText>Txn Count:</LightText>
 
                         <Text>{block.data.block.header.num_txs}</Text>
                       </Content>

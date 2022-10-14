@@ -1,6 +1,10 @@
 import React from 'react';
 import colors from 'src/vars/colors';
-import { arrowrightblack, exclamation, trx } from 'src/assets/fincoreassests';
+import {
+  arrowrightblack,
+  exclamation,
+  transactionImage
+} from 'src/assets/fincoreassests';
 import styled from 'styled-components';
 import dayjs from 'dayjs';
 import {
@@ -318,7 +322,11 @@ const ConsensusState = () => {
               <Heading5>SUN Network</Heading5>
             </FlexBoxLight> */}
             <FlexBoxLight>
-              <img src={trx} style={{ width: 18 }} alt="arrow right" />
+              <img
+                src={transactionImage}
+                style={{ width: 18 }}
+                alt="arrow right"
+              />
               <Heading4>Fincor</Heading4>
             </FlexBoxLight>
             <FlexBox>

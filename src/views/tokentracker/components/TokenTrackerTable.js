@@ -1,6 +1,11 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { exclamation, swap, rank, trx } from 'src/assets/fincoreassests';
+import {
+  exclamation,
+  swap,
+  rank,
+  transactionImage
+} from 'src/assets/fincoreassests';
 import { IconText } from 'src/components';
 import { Table, TableBody, TableRow, TableCell } from 'src/components';
 import styled from 'styled-components';
@@ -122,7 +127,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -224,7 +229,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -326,7 +331,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -428,7 +433,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -530,7 +535,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -632,7 +637,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -734,7 +739,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)
@@ -836,7 +841,7 @@ const TokenTrackerTable = () => {
             </TableCol>
             <TableCol>
               <TdMain>
-                <Icon src={trx} />
+                <Icon src={transactionImage} />
                 <BlockHeight>
                   <BoldText className="marginBottom">
                     Wrapped TRX (WTRX)

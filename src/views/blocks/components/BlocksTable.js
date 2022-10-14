@@ -105,7 +105,7 @@ const BlocksTable = (props) => {
                   </TableCol>
                   <TableCol>
                     <BlockHeight>
-                      <TData>Tx count:</TData>
+                      <TData>Txn count:</TData>
                       <BlockLink>{item.block.header.num_txs}</BlockLink>
                     </BlockHeight>
                   </TableCol>
@@ -149,7 +149,7 @@ const BlocksTable = (props) => {
               ))}
           </TableBody>
         ) : (
-          <NoData colSpan={4} height={340} width={510} imgHeight={55} />
+          <NoData colSpan={4} height={555} width={510} imgHeight={55} />
         )}
       </Table>
     </Wrapper>

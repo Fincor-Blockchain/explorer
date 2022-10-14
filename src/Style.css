@@ -75,3 +75,41 @@ button:focus:not(:focus-visible) {
   text-decoration: none !important;
   background-color: transparent !important;
 }
+
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: local('GilroyRegular'),
+    url('./assets/fonts/Gilroy-Regular.ttf') format('trueType');
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('./assets/fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: local('GilroyLight'),
+    url('./assets/fonts/Gilroy-Light.ttf') format('trueType');
+}
+@font-face {
+  font-family: 'GilroyMedium';
+  src: local('GilroyMedium'),
+    url('./assets/fonts/Gilroy-Medium.ttf') format('trueType');
+}
+@font-face {
+  font-family: 'GilroySemiBold';
+  src: local('GilroySemiBold'),
+    url('./assets/fonts/Gilroy-SemiBold.ttf') format('trueType');
+}
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: local('GilroyExtraBold'),
+    url('./assets/fonts/Gilroy-ExtraBold.ttf') format('trueType');
+}
+@font-face {
+  font-family: 'GilroyBlack';
+  src: local('GilroyBlack'),
+    url('./assets/fonts/Gilroy-Black.ttf') format('trueType');
+}
