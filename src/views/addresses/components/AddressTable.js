@@ -196,7 +196,7 @@ const AddressTable = (props) => {
       <Table hover>
         <TableHeader>
           <TableRow>
-            <TableHeading>Tx Hash</TableHeading>
+            <TableHeading>Txn Hash</TableHeading>
             <TableHeading>Age</TableHeading>
             <TableHeading>Status</TableHeading>
             <TableHeading>From</TableHeading>

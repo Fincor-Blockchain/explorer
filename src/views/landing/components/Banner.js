@@ -36,7 +36,7 @@ const Banner = (props) => {
             small="The"
             small2="Explorer"
             heading="Fincor"
-            para="Search By Address / Tx Hash / Block"
+            para="Search By Address / Txn Hash / Block"
           />
         ) : null}
         <SearchInput />

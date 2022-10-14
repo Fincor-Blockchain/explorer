@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { trx, Confirmed, Unconfirmed } from 'src/assets/fincoreassests';
+import {
+  transactionImage,
+  Confirmed,
+  Unconfirmed
+} from 'src/assets/fincoreassests';
 import { IconText, NoData, TableLoader } from 'src/components';
 import { Table, TableBody, TableRow, TableCell } from 'src/components';
 import styled from 'styled-components';
@@ -111,7 +115,7 @@ const BlocksTransactionsTable = (props) => {
                 <TableRow key={index}>
                   <TableCol>
                     <TdMain>
-                      <Icon src={trx} />
+                      <Icon src={transactionImage} />
                     </TdMain>
                   </TableCol>
                   <TableCol>
