@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import colors from 'src/vars/colors';
 import history from 'src/utils/history';
 import Select from 'react-select';
+import { useSelector } from 'react-redux';
 
 const Wrapper = styled.div``;
 const FilterWrapper = styled.div`
@@ -209,23 +210,27 @@ const style = {
 
 const SearchInput = () => {
   const [state, setState] = useState({ filterName: 'Filter', keyword: '' });
+  const supply = useSelector((state) => state.supply.totalSupply);
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (state.keyword !== '') {
-      if (state.keyword.includes('fincor')) {
+      if (state.keyword.includes('fincor') && state.keyword.length === 45) {
         history.push(`/account-details/${state.keyword}`);
       } else {
-        if (isNaN(state.keyword)) {
+        if (isNaN(state.keyword) && state.keyword.length === 64) {
           history.push(`/txs/${state.keyword}`);
-        } else {
+        } else if (
+          isNaN(state.keyword) === false &&
+          state.keyword.length <= supply?.height.length &&
+          state.keyword <= supply?.height
+        ) {
           history.push(`/blocks/${state.keyword}`);
-        }
+        } else history.push(`/not_found`);
       }
       setState({ ...state, keyword: '' });
     }
   };
-
   const hanldeDropDown = (e) => {
     setState({ ...state, filterName: e.value });
   };
@@ -253,7 +258,7 @@ const SearchInput = () => {
           <VerticalLine />
 
           <Input
-            placeholder="Search by Address / Tx Hash / Block"
+            placeholder="Search by Address / Txn Hash / Block"
             type="text"
             value={state.keyword}
             name="Txs"
@@ -276,7 +281,7 @@ export default SearchInput;
 const Options = [
   {
     value: 'Txs',
-    label: 'Tx Hash'
+    label: 'Txn Hash'
   },
   {
     value: 'Address',

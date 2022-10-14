@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { trx, Confirmed, Unconfirmed } from 'src/assets/fincoreassests';
+import {
+  transactionImage,
+  Confirmed,
+  Unconfirmed
+} from 'src/assets/fincoreassests';
 import { IconText, NoData, TableLoader } from 'src/components';
 import { Table, TableBody, TableRow, TableCell } from 'src/components';
 import styled from 'styled-components';
@@ -107,7 +111,7 @@ const TransactionsTable = (props) => {
     <Wrapper>
       <Table hover bordered>
         {loading ? (
-          <TableLoader colSpan={4} height={360} width={510} />
+          <TableLoader colSpan={4} height={806} width={510} />
         ) : txs && txs.length > 0 ? (
           <TableBody>
             {txs &&
@@ -115,7 +119,7 @@ const TransactionsTable = (props) => {
                 <TableRow key={index}>
                   <TableCol>
                     <TdMain>
-                      <Icon src={trx} />
+                      <Icon src={transactionImage} />
                     </TdMain>
                   </TableCol>
                   <TableCol>
@@ -218,7 +222,7 @@ const TransactionsTable = (props) => {
               ))}
           </TableBody>
         ) : (
-          <NoData colSpan={4} height={340} width={510} imgHeight={55} />
+          <NoData colSpan={4} height={809} width={510} imgHeight={55} />
         )}
       </Table>
     </Wrapper>

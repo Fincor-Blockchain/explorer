@@ -99,6 +99,8 @@ const VerticalIcon = styled.img`
 `;
 const MainWrapper = styled.div`
   margin-top: -93px;
+  height: 100%;
+  min-height: 146px;
   @media (max-width: 768px) {
     margin-top: -228px;
   }
@@ -107,6 +109,7 @@ const MainWrapper = styled.div`
 const CollapseData = styled(Collapse)`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 function BannerCard() {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import {
-  trx
+  transactionImage
   // activity, time
 } from 'src/assets/fincoreassests';
 import styled from 'styled-components';
@@ -191,7 +191,7 @@ const Statistics = () => {
         <MainBody>
           <Body>
             <CardContent>
-              <Icon src={trx} alt="trx" />
+              <Icon src={transactionImage} alt="transactionImage" />
               <CoinAndPrice>
                 <Title>FNR</Title>
                 <Text>0 USD</Text>
